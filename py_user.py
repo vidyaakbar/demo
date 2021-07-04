@@ -1,5 +1,8 @@
 import json
 import subprocess
+import pytest
+import check_file
+
 def welcome():
     print("Welcome to your dashboard")
 
@@ -105,6 +108,7 @@ def home(option=None):
 
 
 
+check_file.check_file("database.txt")
 
 # register(Username, Password1, Password2)
 # gainAccess(Username, Password1)
